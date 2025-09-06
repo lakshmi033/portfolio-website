@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Signup — Lakshmi Vinod Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">LV</div>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#certificates">Certificates</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a class="active" href="signup.html">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SIGNUP FORM -->
+  <main>
+    <section class="signup fade-up">
+      <h2>Create Your Account</h2>
+      <form id="signup-form" class="signup-form">
+
+        <div class="form-row">
+          <input type="text" id="fname" name="fname" placeholder="First Name" required />
+          <input type="text" id="lname" name="lname" placeholder="Last Name" required />
+        </div>
+
+        <div class="form-row">
+          <input type="email" id="email" name="email" placeholder="Email Address" required />
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required />
+        </div>
+
+        <div class="form-row">
+          <input type="date" id="dob" name="dob" required />
+          <div class="gender">
+            <label><input type="radio" name="gender" value="Male" required /> Male</label>
+            <label><input type="radio" name="gender" value="Female" /> Female</label>
+            <label><input type="radio" name="gender" value="Other" /> Other</label>
+          </div>
+        </div>
+
+        <input type="text" id="address" name="address" placeholder="Address Line 1" required />
+
+        <div class="form-row">
+          <input type="text" id="city" name="city" placeholder="City" required />
+          <input type="text" id="state" name="state" placeholder="State" required />
+        </div>
+
+        <div class="form-row">
+          <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="text" id="pincode" name="pincode" placeholder="Pincode" required />
+        </div>
+
+        <div class="form-row">
+          <input type="text" id="college" name="college" placeholder="College / Institution" required />
+          <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option value="CSE">Computer Science</option>
+            <option value="IT">Information Technology</option>
+            <option value="ECE">Electronics</option>
+            <option value="EEE">Electrical</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <input type="password" id="password" name="password" placeholder="Password" minlength="6" required />
+          <input type="password" id="confirm" name="confirm" placeholder="Confirm Password" minlength="6" required />
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Sign Up</button>
+          <button type="reset" class="btn secondary">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Lakshmi Vinod. All rights reserved.
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
